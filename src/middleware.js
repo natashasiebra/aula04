@@ -13,6 +13,11 @@ export const middleware = (request) => {
             return NextResponse.redirect(urlLogin);
         }
     }
+    if(!isTokenValidated || !token){
+        if (request.nextUrl.pathname === '/') {
+            return NextResponse.redirect(urlLogin);
+        }
+    }
     NextResponse.next();
 };
 export const config = {
