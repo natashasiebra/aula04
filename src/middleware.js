@@ -6,6 +6,7 @@ export const middleware = (request) => {
 
     const token = request.cookies.get('token')?.value;
     const urlLogin = new URL('/', request.url);
+    const urllogin = new URL('/', request.url);
     const isTokenValidated = validateToken(token);
 
     if (!isTokenValidated || !token) {
@@ -13,9 +14,9 @@ export const middleware = (request) => {
             return NextResponse.redirect(urlLogin);
         }
     }
-    if(!isTokenValidated || !token){
+    if(isTokenValidated){
         if (request.nextUrl.pathname === '/') {
-            return NextResponse.redirect(urlLogin);
+            return NextResponse.redirect(urllogin);
         }
     }
     NextResponse.next();
