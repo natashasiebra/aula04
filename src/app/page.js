@@ -10,7 +10,7 @@ export default function Login() {
     email: '',
     password: '',
   });
-  const { push, refresh } = useRouter();
+  const { push, refresh} = useRouter();
 
   const handlerLogin = async (e) => {
     e.preventDefault();
@@ -21,7 +21,12 @@ export default function Login() {
       }
       push('/pages/dashboard');
     } catch {
+<<<<<<< HEAD
       refresh();
+=======
+      toast.error("Erro na aplicação");
+     refresh()
+>>>>>>> 11249c80824f4b46dff086d9b751cf43f2eed1c1
     }
   }
   return (
