@@ -21,12 +21,7 @@ export default function Login() {
       }
       push('/pages/dashboard');
     } catch {
-<<<<<<< HEAD
       refresh();
-=======
-      toast.error("Erro na aplicação");
-     refresh()
->>>>>>> 11249c80824f4b46dff086d9b751cf43f2eed1c1
     }
   }
   return (
