@@ -11,10 +11,9 @@ export default async function Dashboard() {
         <div>
            <Suspense fallback={<p>carregando....</p>}>
             <ListUser users={users}/>
-            <button><a href={Alter}>alterar</a></button>
-            <button><a href={Register}>registrar</a></button>
+            <a href="./alterar">alterar</a>
+
            </Suspense>
-            
         </div>
     );
 };
