@@ -5,6 +5,8 @@ export default async function ListUser({users}){
             {users?.map((user, index) =>
                 <p key={index}>{user.name}</p>
             )}
+         
+      
         </div>
     )
 }
