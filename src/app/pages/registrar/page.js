@@ -1,10 +1,9 @@
 
 'use client'
-
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-const UserForm = ({ userAuth}) => {
+const UserForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
      toast.error('registrado com sucesso ')
@@ -13,17 +12,17 @@ const UserForm = ({ userAuth}) => {
     }
   return (
     <div>
-      <h1>Alterar</h1>
+      <h1>Registrar</h1>
       <form onSubmit={handleSubmit}>
         <input
           placeholder='E-mail'
           type="email"
-          onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
+         >
         </input>
         <input
           placeholder='Senha'
           type='password'
-          onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
+          >
         </input>
         <button>Entrar</button>
       </form>

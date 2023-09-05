@@ -10,7 +10,8 @@ export const middleware = (request) => {
     const isTokenValidated = validateToken(token);
 
     if (!isTokenValidated || !token) {
-        if (request.nextUrl.pathname === '/pages/dashboard' || request.nextUrl.pathname === '/pages/alterar' || request.nextUrl.pathname === '/pages/registrar') {
+        if (request.nextUrl.pathname === '/pages/dashboard' || 
+        request.nextUrl.pathname === '/pages/alterar' || request.nextUrl.pathname === '/pages/registrar') {
             return NextResponse.redirect(urlLogin);
         }
     }
@@ -25,5 +26,5 @@ export const middleware = (request) => {
 };
 
 export const config = {
-    matcher: ['/', '/pages/dashboard', '/pages/alterar', '/pages/registrar',] // Adicione as URLs das páginas "alter" e "register"
+    matcher: ['/', '/pages/dashboard', '/pages/alterar', '/pages/registrar'] // Adicione as URLs das páginas "alter" e "register"
 };
