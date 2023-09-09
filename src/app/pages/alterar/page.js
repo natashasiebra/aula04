@@ -1,5 +1,6 @@
 
 'use client'
+import "./style.css"
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,8 +15,9 @@ const UserForm = () => {
     }
   return (
     <div>
-      <h1>Alterar</h1>
+      
       <form onSubmit={handleSubmit}>
+      <h1>Alterar</h1>
         <input
           placeholder='E-mail'
           type="email"
@@ -27,6 +29,7 @@ const UserForm = () => {
           >
         </input>
         <button>Entrar</button>
+        <button><a href="/pages/dashboard">Voltar</a></button>
       </form>
       <ToastContainer/>
     </div>

@@ -1,18 +1,18 @@
-'use server'
+'use serve'
 const responseIsUserAtuh = [
-    {name:'Marcelino',
-        email:'marcelino@teste.com',
-        senha:"12345",
+    {name:'Viuva Negra',
+        email:'natasha@teste.com',
+        senha:"1213",
         token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
     },
-{name:'natasha',
-    email:'natasha@teste.com',
-    senha:"123",
+{name:'Homem De Ferro',
+    email:'tony@teste.com',
+    senha:"1231",
     token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
 },
-{name:'Felipe',
-    email:'felipe@teste.com',
-    senha:"123456",
+{name:'Loki',
+    email:'Loki@teste.com',
+    senha:"1234",
     token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
 }];
 

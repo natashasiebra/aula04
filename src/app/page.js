@@ -3,6 +3,7 @@ import { useState } from "react";
 import handlerAcessUser from "./functions/handlerAcess"
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
+import styles from "../globals.css";
 import 'react-toastify/dist/ReactToastify.css'
 
 export default function Login() {
@@ -25,9 +26,15 @@ export default function Login() {
     }
   }
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={handlerLogin}>
+    <div className={styles.container}>
+      
+      <form className={styles.form} onSubmit={handlerLogin}>
+      
+      <div class="avatar">
+        
+      </div>
+      <h1>Entrar</h1>
+      <div class="input">
         <input
           placeholder='E-mail'
           type="email"
@@ -38,9 +45,14 @@ export default function Login() {
           type='password'
           onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
         </input>
-        <button>Entrar</button>
+        </div>
+        <button class="button-64" role="button"><span class="text">Entrar</span></button>
       </form>
       <ToastContainer/>
     </div>
-  )
+  );
 }
+
+
+
+ 

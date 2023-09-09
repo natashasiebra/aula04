@@ -1,0 +1,26 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/6a/0a/22/6a0a22038032d82fc49165534a48e2e4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:726px;
+}
+form{
+    background-color: #36207473;
+    padding: 15px 20px;
+    width: 250px;
+    height: 300px;
+    margin-top: 10%;
+  margin-left: 10%;
+    border: 2px solid white;
+}
+input{
+    padding: 15px 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid black;
+    transition: border-color 0.3s;
+  }
+
