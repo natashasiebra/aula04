@@ -17,6 +17,8 @@ const UserForm = () => {
     <div>
       
       <form onSubmit={handleSubmit}>
+      <div class="avatar">
+      </div>
       <h1>Alterar</h1>
         <input
           placeholder='E-mail'
@@ -28,8 +30,8 @@ const UserForm = () => {
           type='password'
           >
         </input>
-        <button>Entrar</button>
-        <button><a href="/pages/dashboard">Voltar</a></button>
+        <button class="button-64"  ><span class="text">Alterar</span></button>
+        <button class="button-65"><span class="text"><a href="/pages/dashboard">Voltar</a></span></button>
       </form>
       <ToastContainer/>
     </div>

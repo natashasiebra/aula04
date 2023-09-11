@@ -1,14 +1,16 @@
-import React from 'react';
-import Cookies from 'js-cookie';
+'use client'
+import Cookies from "js-cookie"
+import { useRouter } from "next/navigation";
 
-function RemoverCookie() {
-  const removerCookie = () => {
-    Cookies.remove('token');
-  };
-
+export default function RootLayout() {
+  function sair () {
+    Cookies.remove('token')
+    refresh()
+  }
+  const {refresh} = useRouter();
   return (
-    <button onClick={removerCookie()}>Remover Cookie</button>
-  );
-}
+    <button onClick={sair} class="excluir-64" role="button" ><span class="text">Excluir</span></button>
 
-export default RemoverCookie;
+
+  )
+}

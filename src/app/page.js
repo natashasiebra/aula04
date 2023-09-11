@@ -26,15 +26,12 @@ export default function Login() {
     }
   }
   return (
-    <div className={styles.container}>
-      
-      <form className={styles.form} onSubmit={handlerLogin}>
-      
+    <body>
+    <div class="body">
+      <form onSubmit={handlerLogin}>
       <div class="avatar">
-        
       </div>
       <h1>Entrar</h1>
-      <div class="input">
         <input
           placeholder='E-mail'
           type="email"
@@ -45,11 +42,11 @@ export default function Login() {
           type='password'
           onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
         </input>
-        </div>
-        <button class="button-64" role="button"><span class="text">Entrar</span></button>
+        <button class="button-64"  ><span class="text">Entrar</span></button>
       </form>
       <ToastContainer/>
     </div>
+    </body>
   );
 }
 

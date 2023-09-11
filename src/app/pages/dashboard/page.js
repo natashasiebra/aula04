@@ -2,6 +2,7 @@ import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense } from "react";
 import ListUser from "@/app/componets/ListUser";
 import "./style.css"
+import Excluir from "@/app/componets/excluir"
 export default  function Dashboard() {
 
 
@@ -17,6 +18,7 @@ export default  function Dashboard() {
             <button class="button-64" role="button" ><span class="text"><a href="/pages/registrar">Registrar</a></span></button>
             </div>
            </Suspense>
+           <Excluir class="excluir-64"/>
         </div>
     );
 };
