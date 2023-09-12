@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const UserForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
-     toast.error('Vingador registrado com sucesso ')
+     toast.success('Vingador registrado com sucesso ')
     // Verifique se onSubmit é uma função antes de chamá-la
     
     }

@@ -9,7 +9,7 @@ const UserForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
  
-     toast.error('VIngador alterado com sucesso ')
+     toast.success('VIngador alterado com sucesso ')
     // Verifique se onSubmit é uma função antes de chamá-la
     
     }
