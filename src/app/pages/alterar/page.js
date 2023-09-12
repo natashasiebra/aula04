@@ -9,7 +9,7 @@ const UserForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
  
-     toast.error('alterado com sucesso ')
+     toast.error('VIngador alterado com sucesso ')
     // Verifique se onSubmit é uma função antes de chamá-la
     
     }
@@ -20,6 +20,11 @@ const UserForm = () => {
       <div class="avatar">
       </div>
       <h1>Alterar</h1>
+      <input
+          placeholder='Nome'
+          type="Nome"
+          >
+        </input>
         <input
           placeholder='E-mail'
           type="email"
