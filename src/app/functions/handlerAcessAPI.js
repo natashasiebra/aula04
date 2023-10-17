@@ -1,4 +1,6 @@
 'use serve'
+const url = "https://aula-17-10-tzkb.vercel.app"
+
 const responseIsUserAtuh = [
     {name:'Viuva Negra',
         email:'natasha@teste.com',
