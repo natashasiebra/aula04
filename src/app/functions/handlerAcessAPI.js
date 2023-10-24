@@ -1,19 +1,36 @@
-'use serve'
-const url = "https://aula-17-10-tzkb.vercel.app"
+'use server'
+
+
+const url = "https://servidor-zeta.vercel.app"
+
 
 const getUserAuthenticated = async (user) => {
-    const resposeOfApi = await fetch(url + "/user/autheticated",
- {
-  method:"POST",
-  headers:{"Content-Type": "Application/json"},
-  body: JSON.stringify(user)
-    }
- );
- const userAuth = await resposeOfApi.json();
- return userAuth;
+const responseOfApi = await fetch(url +"/user/authenticated",
+{
+cache:"no-cache",
+method:"POST",
+headers:{"Content-Type":"Application/json"},
+body: JSON.stringify(user)
 }
-const getUsers = () =>{
-       
+);
+const userAuth =await responseOfApi.json();
+console.log(userAuth)
+return userAuth;
 }
+
+const getUsers = async () =>{
+try{
+const responseOfApi = await fetch(url + "/users",{
+next:{revalidate:10}
+});
+const listUsers = responseOfApi.json();
+
+return listUsers
+}catch{
+return null;
+}
+
+}
+
 
 export { getUsers, getUserAuthenticated };

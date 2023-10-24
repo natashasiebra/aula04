@@ -3,10 +3,10 @@ import { Suspense } from "react";
 import ListUser from "@/app/componets/ListUser";
 import "./style.css"
 import Excluir from "@/app/componets/excluir"
-export default  function Dashboard() {
+export default async  function Dashboard() {
 
 
-   const users =  getUsers() 
+   const users = await getUsers() 
     return (
         <div class="body">
            <Suspense  fallback={<p>carregando....</p>}>
